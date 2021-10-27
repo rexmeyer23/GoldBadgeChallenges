@@ -1,0 +1,10 @@
+C:\Users\Rex\Desktop\GoldBadgeChallenges\GoldBadgeChallenges\KomodoCafe\bin\Debug\KomodoCafe.exe.config
+C:\Users\Rex\Desktop\GoldBadgeChallenges\GoldBadgeChallenges\KomodoCafe\bin\Debug\KomodoCafe.exe
+C:\Users\Rex\Desktop\GoldBadgeChallenges\GoldBadgeChallenges\KomodoCafe\bin\Debug\KomodoCafe.pdb
+C:\Users\Rex\Desktop\GoldBadgeChallenges\GoldBadgeChallenges\KomodoCafe\bin\Debug\KomodoCafeClasses.dll
+C:\Users\Rex\Desktop\GoldBadgeChallenges\GoldBadgeChallenges\KomodoCafe\bin\Debug\KomodoCafeClasses.pdb
+C:\Users\Rex\Desktop\GoldBadgeChallenges\GoldBadgeChallenges\KomodoCafe\obj\Debug\KomodoCafe.csproj.AssemblyReference.cache
+C:\Users\Rex\Desktop\GoldBadgeChallenges\GoldBadgeChallenges\KomodoCafe\obj\Debug\KomodoCafe.csproj.CoreCompileInputs.cache
+C:\Users\Rex\Desktop\GoldBadgeChallenges\GoldBadgeChallenges\KomodoCafe\obj\Debug\KomodoCafe.csproj.CopyComplete
+C:\Users\Rex\Desktop\GoldBadgeChallenges\GoldBadgeChallenges\KomodoCafe\obj\Debug\KomodoCafe.exe
+C:\Users\Rex\Desktop\GoldBadgeChallenges\GoldBadgeChallenges\KomodoCafe\obj\Debug\KomodoCafe.pdb

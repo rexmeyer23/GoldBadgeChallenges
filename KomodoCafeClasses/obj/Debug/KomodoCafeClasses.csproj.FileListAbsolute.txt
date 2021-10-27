@@ -1,0 +1,6 @@
+C:\Users\Rex\Desktop\GoldBadgeChallenges\GoldBadgeChallenges\KomodoCafeClasses\bin\Debug\KomodoCafeClasses.dll
+C:\Users\Rex\Desktop\GoldBadgeChallenges\GoldBadgeChallenges\KomodoCafeClasses\bin\Debug\KomodoCafeClasses.pdb
+C:\Users\Rex\Desktop\GoldBadgeChallenges\GoldBadgeChallenges\KomodoCafeClasses\obj\Debug\KomodoCafeClasses.csproj.AssemblyReference.cache
+C:\Users\Rex\Desktop\GoldBadgeChallenges\GoldBadgeChallenges\KomodoCafeClasses\obj\Debug\KomodoCafeClasses.csproj.CoreCompileInputs.cache
+C:\Users\Rex\Desktop\GoldBadgeChallenges\GoldBadgeChallenges\KomodoCafeClasses\obj\Debug\KomodoCafeClasses.dll
+C:\Users\Rex\Desktop\GoldBadgeChallenges\GoldBadgeChallenges\KomodoCafeClasses\obj\Debug\KomodoCafeClasses.pdb
