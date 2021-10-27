@@ -9,6 +9,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KomodoCafeClasses", "Komodo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KomodoCafeTest", "KomodoCafeTest\KomodoCafeTest.csproj", "{88A37F26-0486-4F33-9AA4-8A08E1EF85F0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KomodoClaims", "KomodoClaims\KomodoClaims.csproj", "{F868FF1F-1F86-4C15-8CB3-C8F9E5818177}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KomodoClaimsClasses", "KomodoClaimsClasses\KomodoClaimsClasses.csproj", "{CC7BC305-4EC4-4EF9-917E-A16CE485364B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KomodoClaimsTest", "KomodoClaimsTest\KomodoClaimsTest.csproj", "{AF4EEB9E-352C-4A22-97DE-AB7422D92B05}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +33,18 @@ Global
 		{88A37F26-0486-4F33-9AA4-8A08E1EF85F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{88A37F26-0486-4F33-9AA4-8A08E1EF85F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{88A37F26-0486-4F33-9AA4-8A08E1EF85F0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F868FF1F-1F86-4C15-8CB3-C8F9E5818177}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F868FF1F-1F86-4C15-8CB3-C8F9E5818177}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F868FF1F-1F86-4C15-8CB3-C8F9E5818177}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F868FF1F-1F86-4C15-8CB3-C8F9E5818177}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CC7BC305-4EC4-4EF9-917E-A16CE485364B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC7BC305-4EC4-4EF9-917E-A16CE485364B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC7BC305-4EC4-4EF9-917E-A16CE485364B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC7BC305-4EC4-4EF9-917E-A16CE485364B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AF4EEB9E-352C-4A22-97DE-AB7422D92B05}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF4EEB9E-352C-4A22-97DE-AB7422D92B05}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF4EEB9E-352C-4A22-97DE-AB7422D92B05}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF4EEB9E-352C-4A22-97DE-AB7422D92B05}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

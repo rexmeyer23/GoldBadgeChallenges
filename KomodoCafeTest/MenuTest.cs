@@ -18,10 +18,10 @@ namespace KomodoCafeTest
         {
             //AAA
             //Arrange
-            MenuRepo _repo = new MenuRepo();
+            MenuRepo _menuRepo = new MenuRepo();
             MenuItem itemOne = new MenuItem();
             //Act
-            bool result = _repo.AddMenuItem(itemOne);
+            bool result = _menuRepo.AddMenuItem(itemOne);
             //Assert
             Assert.IsTrue(result);
         }
@@ -47,19 +47,21 @@ namespace KomodoCafeTest
         //    Assert.AreEqual(expected, actual);
         //}
         [TestMethod]
-        public void Test_RetrieveByMealNumber()
-        {
-            //AAA
-            //Arrange
-           MenuItem item = new MenuItem();
-           int mealID = item.MealNumber;
-           //Act
-          bool actual = _menuRepo.RetrieveByMealNumber(mealID);
-            bool expected = true;
-           //Assert
-           Assert.AreEqual(expected, actual);
-        }
-       
+        //public void Test_RetrieveByMealNumber()
+        //{
+        //  //AAA
+        //    //Arrange
+        //   MenuRepo _menuRepo = new MenuRepo();
+        //  MenuItem meal = new MenuItem(int mealNumber);
+        //   meal.MealNumber = 2;
+
+        //    //Act
+        //    bool actual = _menuRepo.RetrieveByMealNumber(2);
+        //   bool expected = meal;
+        //   //Assert
+        //    Assert.AreEqual(expected, actual);
+        //}
+
     }
 }
 

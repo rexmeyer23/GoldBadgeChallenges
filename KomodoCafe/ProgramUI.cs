@@ -73,12 +73,9 @@ namespace KomodoCafe
         }
         public void MenuList()
         {
-            MenuItem itemOne = new MenuItem(1, "Hamburger", "A juicy beef patty layered with freshly sliced cheese and vegetables", "Beef, Tomato, Lettuce, Onion, American Cheese, Sesame Buns", 6.95);
-            MenuItem itemTwo = new MenuItem(2, "Spaghetti", "A bed full of al dente noodles covered our delicious meat sauce.", "Spaghetti Noodles, Beef, Tomato Sauce", 5.45);
-            MenuItem itemThree = new MenuItem(3, "Chicken Noodle Soup", "A hearty bowl of chicken and noodles that is perfect on a cold winter day.", "Chicken, Carrots, Egg Noodles, Chicken Broth", 3.50);
-            _menuRepo.AddMenuItem(itemOne);
-            _menuRepo.AddMenuItem(itemTwo);
-            _menuRepo.AddMenuItem(itemThree);
+            _menuRepo.AddMenuItem(new MenuItem(1, "Hamburger", "A juicy beef patty layered with freshly sliced cheese and vegetables", "Beef, Tomato, Lettuce, Onion, American Cheese, Sesame Buns", 6.95));
+            _menuRepo.AddMenuItem(new MenuItem(2, "Spaghetti", "A bed full of al dente noodles covered our delicious meat sauce.", "Spaghetti Noodles, Beef, Tomato Sauce", 5.45));
+            _menuRepo.AddMenuItem(new MenuItem(3, "Chicken Noodle Soup", "A hearty bowl of chicken and noodles that is perfect on a cold winter day.", "Chicken, Carrots, Egg Noodles, Chicken Broth", 3.50));
         }
         //option 2: create menu item
         private void CreateNewItem()
