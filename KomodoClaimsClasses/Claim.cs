@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 
 namespace KomodoClaimsClasses
 {
-    //Queue<Claim> claims = new Queue<Claim>();
     public enum ClaimType { Car, Home, Theft }
     public class Claim
     {
         public int ClaimID { get; set; }
         public ClaimType TypeOfClaim { get; set; }
         public string Description { get; set; }
+        
         public decimal ClaimAmount { get; set; }
         public DateTime DateOfIncident { get; set; }
         public DateTime DateOfClaim { get; set; }
@@ -20,11 +20,9 @@ namespace KomodoClaimsClasses
         {
             get
             {
-                
                 DateTime expirationDate = DateOfIncident.AddDays(30);
                 bool boolResult = (DateOfClaim < expirationDate) ? true : false;
                 return boolResult;
-         
             }
         }
         public Claim()
