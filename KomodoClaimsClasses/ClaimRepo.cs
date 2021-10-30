@@ -11,10 +11,15 @@ namespace KomodoClaimsClasses
         private readonly Queue<Claim> _claimsQueue = new Queue<Claim>();
         //CRUD
         //CREATE
-        public void FileNewClaim(Claim newClaim)
+        public bool FileNewClaim(Claim newClaim)
         {
-
+           int initialCount = _claimsQueue.Count();
             _claimsQueue.Enqueue(newClaim);
+            if ( _claimsQueue.Count == initialCount + 1 ) 
+            {
+                return true;
+            }
+            return false;
         }
         //READ
         public Queue<Claim> ListClaims()
@@ -26,14 +31,6 @@ namespace KomodoClaimsClasses
             return _claimsQueue.Peek();
         }
 
-        //public Claim StringDescription(string description)
-        //{
-        //    char[] delimiters = new char[] { ' ', '.' };
-        //    foreach (var word in description.Split(delimiters)) 
-        //    {
-        //        Console.WriteLine(word);
-        //    }
-        //}
 
         //UPDATE
         //DELETE

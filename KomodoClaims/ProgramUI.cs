@@ -38,7 +38,6 @@ namespace KomodoClaims
                     case 3:
                         CreateNewClaim();
                         break;
-
                     case 4:
                         Console.WriteLine("Goodbye!");
                         Console.ReadKey();
@@ -141,8 +140,15 @@ namespace KomodoClaims
             newClaim.ClaimAmount = Convert.ToDecimal(Console.ReadLine());
             Console.WriteLine("Please enter the date of the accident in the following format below.\n" +
                 "MM/DD/YYYY\n");
-            DateTime dateOfAccident = DateTime.Parse(Console.ReadLine());
-            newClaim.DateOfIncident = dateOfAccident;
+            try
+            {
+                newClaim.DateOfIncident = DateTime.Parse(Console.ReadLine());
+            }
+            catch
+            {
+                throw new Exception("Please enter in correct format. MM/DD/YYYY");
+                
+            }
             newClaim.DateOfClaim = DateTime.Now;
             if (newClaim.IsValid) 
             {
