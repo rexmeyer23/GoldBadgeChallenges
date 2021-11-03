@@ -38,17 +38,6 @@ namespace KomodoClaimsClasses
         {
             return _claimsQueue.Dequeue();
         }
-        //HELPER
-        //public Claim RetrieveClaimByID(int claimID)
-        //{
-        //    foreach(Claim claim in _claimsQueue)
-        //    {
-        //        if(claim.ClaimID == claimID)
-        //        {
-        //            return claim;
-        //        }
-        //    }
-        //    return null;
-        //}
+        
     }
 }

@@ -10,6 +10,8 @@ namespace KomodoBadges
     {
         static void Main(string[] args)
         {
+            ProgramUI badges = new ProgramUI();
+            badges.Run();
         }
     }
 }
