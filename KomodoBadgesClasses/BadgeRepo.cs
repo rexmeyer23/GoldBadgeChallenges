@@ -9,6 +9,7 @@ namespace KomodoBadgesClasses
     public class BadgeRepo
     {
         private readonly Dictionary<int, List<string>> _badgeDictionary = new Dictionary<int, List<string>>();
+        
         //CRUD
         //CREATE - add a new badge to dictionary
         public bool CreateNewBadge(Badge badge)
@@ -25,14 +26,24 @@ namespace KomodoBadgesClasses
             return _badgeDictionary;
         }
         //UPDATE - updates an exisiting badge
-        public bool UpdateDoorAccess(int existingBadge, Badge newBadge)
+        //public bool UpdateDoorAccess(int existingBadge, Badge newBadge)
+        //{
+        //    Badge oldBadge = RetrieveByID(existingBadge);
+        //    if(oldBadge != null)
+        //    {
+        //        oldBadge.BadgeID = newBadge.BadgeID;
+        //        oldBadge.Doors = newBadge.Doors;
+        //        oldBadge.BadgeName = newBadge.BadgeName;
+        //        return true;
+        //    }
+        //    return false;
+        //}
+        public bool AddDoorToBadge(int badgeID, string newDoor)
         {
-            Badge oldBadge = RetrieveByID(existingBadge);
-            if(oldBadge != null)
+            Badge badge = RetrieveByID(badgeID);
+            if (badge != null)
             {
-                oldBadge.BadgeID = newBadge.BadgeID;
-                oldBadge.Doors = newBadge.Doors;
-                oldBadge.BadgeName = newBadge.BadgeName;
+                badge.Doors.Add(newDoor);
                 return true;
             }
             return false;
@@ -47,8 +58,16 @@ namespace KomodoBadgesClasses
                 return true;
             }
             return false;
-
-
+        }
+        public bool RemoveDoorFromBadge(int badgeID, string oldDoor)
+        {
+            Badge badge = RetrieveByID(badgeID);
+            if (badge != null)
+            {
+                badge.Doors.Remove(oldDoor);
+                return true;
+            }
+            return false;
         }
         //HELPER
         public Badge RetrieveByID(int idNum)
@@ -61,25 +80,7 @@ namespace KomodoBadgesClasses
             }
             return null;
         }
-        public bool AddDoorToBadge(int badgeID, string newDoor)
-        {
-            Badge badge = RetrieveByID(badgeID);
-            if (badge != null)
-            {
-                badge.Doors.Add(newDoor);
-                return true;
-            }
-            return false;
-        }
-        public bool RemoveDoorFromBadge(int badgeID, string oldDoor)
-        {
-            Badge badge = RetrieveByID(badgeID);
-            if(badge != null)
-            {
-                badge.Doors.Remove(oldDoor);
-                return true;
-            }
-            return false;
-        }
+       
+       
     }
 }

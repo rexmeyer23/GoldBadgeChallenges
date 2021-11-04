@@ -49,5 +49,6 @@ namespace KomodoClaimsTest
             //Assert
             Assert.AreEqual(claim, newClaim);
         }
+        
     }
 }
