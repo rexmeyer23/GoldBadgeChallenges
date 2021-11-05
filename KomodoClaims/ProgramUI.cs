@@ -117,22 +117,29 @@ namespace KomodoClaims
                 "1. Car\n" +
                 "2. Home\n" +
                 "3. Theft\n");
-            int claimType = Convert.ToInt32(Console.ReadLine());
-            switch (claimType)
+            bool enteringType = true;
+            while (enteringType)
             {
-                case 1:
-                    newClaim.TypeOfClaim = ClaimType.Car;
-                    break;
-                case 2:
-                    newClaim.TypeOfClaim = ClaimType.Home;
-                    break;
-                case 3:
-                    newClaim.TypeOfClaim = ClaimType.Theft;
-                    break;
-                default:
-                    Console.Write("Please enter a valid number: \n");
-                    break;
+                int claimType = Convert.ToInt32(Console.ReadLine());
+                switch (claimType)
+                {
+                    case 1:
+                        newClaim.TypeOfClaim = ClaimType.Car;
+                        enteringType = false;
+                        break;
+                    case 2:
+                        newClaim.TypeOfClaim = ClaimType.Home;
+                        enteringType = false;
+                        break;
+                    case 3:
+                        newClaim.TypeOfClaim = ClaimType.Theft;
+                        enteringType = false;
+                        break;
+                    default:
+                        Console.Write("Please enter a valid number: \n");
+                        break;
 
+                }
             }
             Console.WriteLine("Please enter a brief description of claim.");
             newClaim.Description = Console.ReadLine();
@@ -140,14 +147,19 @@ namespace KomodoClaims
             newClaim.ClaimAmount = Convert.ToDecimal(Console.ReadLine());
             Console.WriteLine("Please enter the date of the accident in the following format below.\n" +
                 "MM/DD/YYYY\n");
-            try
+            bool accidentDate = true;
+            while (accidentDate)
             {
-                newClaim.DateOfIncident = DateTime.Parse(Console.ReadLine());
-            }
-            catch
-            {
-                throw new Exception("Please enter in correct format. MM/DD/YYYY");
-                
+                try
+                {
+                    newClaim.DateOfIncident = DateTime.Parse(Console.ReadLine());
+                    accidentDate = false;
+                }
+                catch
+                {
+                    Console.WriteLine("Please enter in correct format. MM/DD/YYYY");
+
+                }
             }
             newClaim.DateOfClaim = DateTime.Now;
             if (newClaim.IsValid) 

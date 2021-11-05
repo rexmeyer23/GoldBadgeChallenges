@@ -26,18 +26,6 @@ namespace KomodoBadgesClasses
             return _badgeDictionary;
         }
         //UPDATE - updates an exisiting badge
-        //public bool UpdateDoorAccess(int existingBadge, Badge newBadge)
-        //{
-        //    Badge oldBadge = RetrieveByID(existingBadge);
-        //    if(oldBadge != null)
-        //    {
-        //        oldBadge.BadgeID = newBadge.BadgeID;
-        //        oldBadge.Doors = newBadge.Doors;
-        //        oldBadge.BadgeName = newBadge.BadgeName;
-        //        return true;
-        //    }
-        //    return false;
-        //}
         public bool AddDoorToBadge(int badgeID, string newDoor)
         {
             Badge badge = RetrieveByID(badgeID);
@@ -59,6 +47,7 @@ namespace KomodoBadgesClasses
             }
             return false;
         }
+        //removes a single door from a badge
         public bool RemoveDoorFromBadge(int badgeID, string oldDoor)
         {
             Badge badge = RetrieveByID(badgeID);

@@ -68,11 +68,12 @@ namespace KomodoBadgesTest
             //AAA
             //Arrange
             _badgeRepo.CreateNewBadge(_badge);
-            
+           int badgeID =  _badge.BadgeID;
             //Act
-            Badge actual = _badgeRepo.RetrieveByID(12345);
+            Badge actual = _badgeRepo.RetrieveByID(badgeID);
             Badge expected = _badge;
             //Assert
+            Assert.IsTrue(actual.Doors.Contains("A7"));
             Assert.AreEqual(expected, actual);
         }
     }
